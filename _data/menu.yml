@@ -1,0 +1,28 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: <strong>Info</strong>
+    entries:
+      - title: on a cosmic quest to transmogrify caffeine, spaghetti and keyboard clatter into pixelated C++ chaos
+      - title: in case of problems - I run away from them (following the map or just along the contour line) <strong>OR</strong> I whack them with a hockey stick problems <strong>OR</strong> I frag them and take the flag.
+      - title: GitHub
+        url: https://github.com/facktorial/
+      - title: Resume
+        url: "/faktorial-struggles/RESUME_KUBA_DVORAK.pdf"
+
+  - title: <strong>All posts</strong> (max 5)
+    post_list:
+      limit: 5
+      category: general
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
+
+  - title: Given examples of posts
+    post_list:
+      category: examples
+      show_more: true
+
+  - title: rss
+    url: feed.xml
