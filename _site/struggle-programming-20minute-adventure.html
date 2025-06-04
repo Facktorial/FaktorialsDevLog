@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Hmmm, typical workflow, oh shiiiit, here we go again...</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Hmmm, typical workflow, oh shiiiit, here we go again…" />
+<meta name="author" content="Kuba Dvorak" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Let’s say, we are working hard1 on finishing our third custom game engine, as every proper programmer should – and then we realize: “What the hell am I doing? This shit again???” Okay, we believe we are working hard. &#8617;" />
+<meta property="og:description" content="Let’s say, we are working hard1 on finishing our third custom game engine, as every proper programmer should – and then we realize: “What the hell am I doing? This shit again???” Okay, we believe we are working hard. &#8617;" />
+<link rel="canonical" href="http://localhost:4000/faktorialsdevlog/struggle-programming-20minute-adventure.html" />
+<meta property="og:url" content="http://localhost:4000/faktorialsdevlog/struggle-programming-20minute-adventure.html" />
+<meta property="og:site_name" content="Programming struggles of Jakuboslav Dvorak" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-04T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hmmm, typical workflow, oh shiiiit, here we go again…" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/faktorialsdevlog/struggle-programming-20minute-adventure.html","@type":"BlogPosting","headline":"Hmmm, typical workflow, oh shiiiit, here we go again…","dateModified":"2025-06-04T00:00:00+02:00","datePublished":"2025-06-04T00:00:00+02:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/faktorialsdevlog/struggle-programming-20minute-adventure.html"},"description":"Let’s say, we are working hard1 on finishing our third custom game engine, as every proper programmer should – and then we realize: “What the hell am I doing? This shit again???” Okay, we believe we are working hard. &#8617;","author":{"@type":"Person","name":"Kuba Dvorak"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/faktorialsdevlog/feed.xml" title="Programming struggles of Jakuboslav  Dvorak" /><link rel="shortcut icon" type="image/x-icon" href="/faktorialsdevlog/logo.png" />
+  <link rel="stylesheet" href="/faktorialsdevlog/assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
+
+</head>
+<body a="auto">
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <a href="/faktorialsdevlog/">..</a><article>
+  <p class="post-meta">
+    <time datetime="2025-06-04 00:00:00 +0200">2025-06-04</time>
+  </p>
+  
+  <h1>Hmmm, typical workflow, oh shiiiit, here we go again...</h1>
+
+  <p>Let’s say, we are working hard<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> on finishing our third custom game engine, as every proper programmer should – and then we realize: <strong>“What the hell am I doing?</strong> This shit again???”</p>
+
+<p>The same behavioral pattern<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> once again occurred:</p>
+
+<ul>
+  <li>“Hmmm, let’s focus on rendering pipeline. It would be nice to see something on screen finally.”</li>
+  <li>“But it’s a good idea to start working on ECS – well-designed, well-optimized – <strong>it will be a solid foundation</strong> I can rely on and build upon as development progresses.”</li>
+  <li>“This seems like I’ll finish skeleton of my ECS in no time, but,… oh no… wait a minute… for optimized ECS<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup>, using <code class="language-plaintext highlighter-rouge">std::vector</code> is a killer, and maybe there is a be better-fitting container.”</li>
+  <li>“So, I am writing my implementation of <code class="language-plaintext highlighter-rouge">PagedVector</code><sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup> and suddenly realize: I need my own verbose implementation of zip function to iterate through multiple containers<sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup>.”</li>
+  <li>Do you see where I’m going with this? <sup id="fnref:9"><a href="#fn:9" class="footnote" rel="footnote" role="doc-noteref">6</a></sup></li>
+  <li>“Hmmmm, this is another relatively common feature. It shouldn’t be in my game engine project – it should be in my own templated <code class="language-plaintext highlighter-rouge">STL</code> library.</li>
+  <li>“When I am creating my custom library, I should make it well and fill some technical gaps in my skills.”</li>
+  <li>“Alright, I got <code class="language-plaintext highlighter-rouge">clang-tidy</code>, <code class="language-plaintext highlighter-rouge">clang-format</code>, <code class="language-plaintext highlighter-rouge">docker</code>, CI/CD,… only <code class="language-plaintext highlighter-rouge">Conan</code> is missing now.”</li>
+  <li>“Hmmmmm, Now when I created multiple libs. I should learn what a <strong>plugin</strong><sup id="fnref:7"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">7</a></sup> is, how to make them with Conan – and why.”</li>
+  <li>“How should <code class="language-plaintext highlighter-rouge">PluginManager</code> handle evolution of plugins during development?”</li>
+  <li>“<strong>WHY THE FUCK I am writing a Plugin manager?</strong> I thought I just want create simple game!”</li>
+  <li>“I should learn from my mistake. Finally.”</li>
+  <li>“Now I’m working out how create devlog on GitHub Pages and fine-tune this post.”</li>
+  <li>He didn’t learn. Again. But at least he learned something.</li>
+</ul>
+
+<p>How deep the rabbit hole goes?<sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">8</a></sup></p>
+
+<p>Do you prematurely optimize too?</p>
+
+<hr data-content="footnotes" />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Okay, we believe we are working hard. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Last time we swore we’d never do it again – that next time, we’d be more careful. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Which only matter when we’ve got really scaled-up data. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://peterino.com/Paged%20Vector.html">PagedVector</a> is data structure that relies on fixed-size arrays under the hood. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>A zip function is not in C++20 standard, but is coming in C++23. <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:9">
+      <p>In and out. Twenty minute adventure. <img src="destination.png" alt="" /> <a href="#fnref:9" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p>Plugin in C++ is basically design pattern wrapping work with dynamic libraries. Dynamic libraries are pre-compiled and we can changed their binaries in compiled host application <em>in runtime</em>. We can develop host application and plugin independently. Their development is tied together via shared interface. <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p>I stole and cannibalized this example, even next sentence. By the way this is a longer footnote and i think it is still pretty cool, even prettier than shorter ones even though it does not say anything useful but whatever. <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+      </div>
+    </main>
+  </body>
+</html>

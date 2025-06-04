@@ -5,11 +5,11 @@ entries:
   - title: <strong>Info</strong>
     entries:
       - title: on a cosmic quest to transmogrify caffeine, spaghetti and keyboard clatter into pixelated C++ chaos
-      - title: in case of problems - I run away from them (following the map or just along the contour line) <strong>OR</strong> I whack them with a hockey stick problems <strong>OR</strong> I frag them and take the flag.
+      - title: in case of problems - I run away from them (following the map or just along the contour line) <strong>OR</strong> I whack them with a hockey stick <strong>OR</strong> I frag them and take the flag.
       - title: GitHub
         url: https://github.com/facktorial/
       - title: Resume
-        url: "/faktorial-struggles/RESUME_KUBA_DVORAK.pdf"
+        url: "/faktorialsdevlog/RESUME_KUBA_DVORAK.pdf"
 
   - title: <strong>All posts</strong> (max 5)
     post_list:
