@@ -1,7 +1,7 @@
 title: Programming struggles of Jakuboslav  Dvorak # name of the site
 author: Kuba Dvorak # name of site's author
 email: ja.facktorial@gmail.com # email of site's author
-baseurl: "/faktorial-struggles" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+baseurl: "/FaktorialsDevLog" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
   Personal static page using minimalist Jekyll theme: no-style-please.
 
